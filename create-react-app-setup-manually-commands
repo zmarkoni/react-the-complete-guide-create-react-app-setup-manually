@@ -27,3 +27,10 @@ npm install --save-dev autoprefixer
 Copy from babelrc
 
 // add support for images
+npm install --save-dev url-loader
+npm install --save-dev file-loader
+
+//import js,css... in index.html
+npm install --save-dev html-webpack-plugin
+
+

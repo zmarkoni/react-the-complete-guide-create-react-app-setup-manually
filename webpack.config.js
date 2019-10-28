@@ -1,6 +1,7 @@
 // this is node.js
 const path = require('path'); // provided automatically for constructing absolute path
 const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -16,12 +17,12 @@ module.exports = {
     module: {
         rules: [
             {
-                test: '/\.js$/',
+                test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: '/node_modules/'
             },
             {
-                test: '/\.css$/',
+                test: /\.css$/,
                 exclude: '/node_modules/',
                 use: [
                     { loader: 'style-loader' }, // injecting css code
@@ -40,7 +41,19 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(png|jpg?g|gif)$/,
+                loader: 'url-loader?limit=8000&name=images/[name].[ext]'
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({ // will copy this in src/build file like other bundles
+            template: __dirname + '/src/index.html', //starting point
+            filename: 'index.html',
+            inject: 'body',
+
+        })
+    ]
 };

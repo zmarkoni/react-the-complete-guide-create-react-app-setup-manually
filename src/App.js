@@ -4,6 +4,7 @@ import { Link, Route } from 'react-router-dom';
 import Users from './containers/Users';
 import asyncComponent from './hoc/asyncComponent';
 
+// lazy loading is supported automatically by webpack
 const AsyncPizza = asyncComponent(() => {
     return import('./containers/Pizza.js');
 });
@@ -24,3 +25,5 @@ class App extends Component {
         );
     }
 }
+
+export default App;
