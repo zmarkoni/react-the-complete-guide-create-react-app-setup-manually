@@ -1,4 +1,3 @@
-// "presets" need to be double quotes and need to be array
 {
   "presets": [
     [
@@ -6,7 +5,9 @@
       {
         "targets": {
           "browsers": ["> 1%", "last 2 versions"]
-        }
+        },
+        "useBuiltIns": "usage",
+        "corejs": 3
       }
     ],
     "@babel/preset-react"
