@@ -1,4 +1,29 @@
-npm init   // set up npm
+// set up npm
+npm init
 npm install --save-dev webpack@3 webpack-dev-server
-create src/index.html
+
+// create src/index.html
 npm install --save react react-dom react-router-dom
+
+// configure package.json
+"start": "webpack-dev-server"
+
+npm install --save-dev webpack-cli
+
+// now we can configure base webpack here
+// react-the-complete-guide-create-react-app-setup-manually/webpack.config.js
+
+// configure babel
+npm install --save-dev @babel/core @babel/preset-env @babel/preset-react @babel/preset-stage-2 babel-loader @babel/plugin-proposal-class-properties
+
+// add .babelrc.js file
+
+// support CSS
+npm install --save-dev style-loader css-loader
+npm install --save-dev postcss-loader
+npm install --save-dev autoprefixer
+
+// add browserslist in package.json
+Copy from babelrc
+
+// add support for images
