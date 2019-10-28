@@ -1,0 +1,3 @@
+npm init   // set up npm
+npm install --save-dev webpack@3 webpack-dev-server
+create src/index.html

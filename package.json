@@ -1,0 +1,23 @@
+{
+  "name": "react-the-complete-guide-create-react-app-setup-manually",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmarkoni/react-the-complete-guide-create-react-app-setup-manually.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmarkoni/react-the-complete-guide-create-react-app-setup-manually/issues"
+  },
+  "homepage": "https://github.com/zmarkoni/react-the-complete-guide-create-react-app-setup-manually#readme",
+  "devDependencies": {
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.9.1"
+  }
+}
