@@ -43,4 +43,11 @@ npm install --save-dev file-loader
 //import js,css... in index.html
 npm install --save-dev html-webpack-plugin
 
+for webpack production, just duplicate webpack.config.js and rename to webpack.config.prod.js
+There we need to change just mode and devtools
+Also just add script command in pckage.json like build:prod
+Using with
+npm run build:prod
 
+For development
+npm run start
